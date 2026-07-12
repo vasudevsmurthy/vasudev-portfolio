@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-paper text-ink font-body dark:bg-ink dark:text-paper transition-colors duration-300;
+}
+
+h1, h2, h3, .font-display {
+  font-family: var(--font-display), serif;
+}
+
+.glass {
+  @apply backdrop-blur-xl bg-white/70 dark:bg-white/[0.04] border border-black/5 dark:border-white/10;
+}
+
+.section {
+  @apply max-w-6xl mx-auto px-6 py-24;
+}
+
+.gradient-text {
+  @apply bg-clip-text text-transparent bg-gradient-to-r from-ember to-plum;
+}
+
+.eyebrow {
+  @apply font-mono text-xs tracking-[0.2em] uppercase text-ember;
+}
+
+/* Custom cursor should still show default cursor on touch devices */
+@media (pointer: coarse) {
+  * { cursor: auto !important; }
+}

@@ -1,0 +1,72 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model ContactMessage {
+  id        String   @id @default(cuid())
+  name      String
+  email     String
+  message   String
+  createdAt DateTime @default(now())
+  read      Boolean  @default(false)
+}
+
+model VisitorLog {
+  id        String   @id @default(cuid())
+  path      String
+  createdAt DateTime @default(now())
+}
+
+model Testimonial {
+  id        String   @id @default(cuid())
+  name      String
+  role      String?
+  quote     String
+  rating    Int?
+  approved  Boolean  @default(false)
+  createdAt DateTime @default(now())
+}
+
+model Reaction {
+  id    String @id @default("claps")
+  count Int    @default(0)
+}
+
+// Stub models to expand into later — blog, gallery, analytics.
+// Uncomment / extend these when you're ready to move content off content.json
+// and into the database.
+
+// model Project {
+//   id          String   @id @default(cuid())
+//   title       String
+//   description String
+//   tech        String[]
+//   githubUrl   String?
+//   liveUrl     String?
+//   images      String[]
+//   featured    Boolean  @default(false)
+//   createdAt   DateTime @default(now())
+// }
+
+// model BlogPost {
+//   id        String   @id @default(cuid())
+//   title     String
+//   slug      String   @unique
+//   content   String
+//   coverImage String?
+//   published Boolean  @default(false)
+//   createdAt DateTime @default(now())
+// }
+
+// model GalleryImage {
+//   id        String   @id @default(cuid())
+//   url       String
+//   album     String?
+//   caption   String?
+//   createdAt DateTime @default(now())
+// }

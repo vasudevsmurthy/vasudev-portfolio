@@ -1,0 +1,454 @@
+{
+  "profile": {
+    "name": "Vasudev S",
+    "title": "AI & ML Engineer",
+    "tagline": "Building intelligent systems at the intersection of AI, ML, and software engineering.",
+    "profileImage": "/profile.jpg",
+    "resumeUrl": "/resume.pdf",
+    "email": "vasudev.s.murthy@gmail.com",
+    "phone": "+91 789233739",
+    "location": "Bengaluru, India",
+    "social": {
+      "linkedin": "https://www.linkedin.com/in/vasudev--s/",
+      "github": "https://github.com/vasudevsmurthy",
+      "instagram": "",
+      "x": "",
+      "whatsapp": ""
+    }
+  },
+  "roles": [
+    "AI & ML Engineer",
+    "Computer Vision Developer",
+    "Deep Learning Enthusiast",
+    "Python Developer",
+    "Competitive Programmer"
+  ],
+  "now": {
+    "text": "Learning advanced deep learning architectures and preparing applications for a Master's in UK.",
+    "updatedAt": "July 2026"
+  },
+  "stats": [
+    {
+      "value": "3+",
+      "label": "Years of Learning",
+      "icon": "calendar"
+    },
+    {
+      "value": "5",
+      "label": "AI & Software Projects",
+      "icon": "code"
+    },
+    {
+      "value": "1",
+      "label": "Internship",
+      "icon": "briefcase"
+    },
+    {
+      "value": "6+",
+      "label": "Certifications",
+      "icon": "award"
+    },
+    {
+      "value": "1",
+      "label": "Research Paper",
+      "icon": "book"
+    },
+    {
+      "value": "15+",
+      "label": "Technologies",
+      "icon": "cpu"
+    }
+  ],
+  "techStack": [
+    "python",
+    "javascript",
+    "react",
+    "nextjs",
+    "tensorflow",
+    "opencv",
+    "flutter",
+    "fastapi",
+    "java"
+  ],
+  "about": {
+    "bio": "Final-year B.E. student in Artificial Intelligence and Machine Learning at BMS Institute of Technology and Management, with a Diploma in Mechanical Engineering. Passionate about developing AI-powered solutions, computer vision applications, and full-stack web applications. Experienced in building real-world projects using Python, Deep Learning, YOLO, Next.js, and modern web technologies.",
+    "careerObjective": "Aspiring AI & Machine Learning Engineer seeking opportunities to apply my technical skills to real-world challenges while continuously learning and contributing to innovative software and AI solutions.",
+    "interests": [
+      "Artificial Intelligence",
+      "Machine Learning",
+      "Computer Vision",
+      "Deep Learning",
+      "Full Stack Development"
+    ],
+    "hobbies": [
+      "Building AI Projects",
+      "Playing Badminton",
+      "Reading Technology Blogs",
+      "Learning New Technologies"
+    ]
+  },
+  "skills": [
+    {
+      "category": "Programming Languages",
+      "items": [
+        {
+          "name": "Python",
+          "level": 90
+        },
+        {
+          "name": "Java",
+          "level": 75
+        },
+        {
+          "name": "C",
+          "level": 70
+        },
+        {
+          "name": "JavaScript",
+          "level": 80
+        },
+        {
+          "name": "TypeScript",
+          "level": 75
+        }
+      ]
+    },
+    {
+      "category": "AI & Machine Learning",
+      "items": [
+        {
+          "name": "PyTorch",
+          "level": 90
+        },
+        {
+          "name": "TensorFlow",
+          "level": 80
+        },
+        {
+          "name": "YOLOv8 / YOLO11",
+          "level": 90
+        },
+        {
+          "name": "OpenCV",
+          "level": 85
+        },
+        {
+          "name": "Computer Vision",
+          "level": 90
+        },
+        {
+          "name": "Deep Learning",
+          "level": 85
+        }
+      ]
+    },
+    {
+      "category": "Web Development",
+      "items": [
+        {
+          "name": "Next.js",
+          "level": 85
+        },
+        {
+          "name": "React",
+          "level": 80
+        },
+        {
+          "name": "HTML & CSS",
+          "level": 90
+        },
+        {
+          "name": "Tailwind CSS",
+          "level": 85
+        },
+        {
+          "name": "Flask",
+          "level": 80
+        },
+        {
+          "name": "FastAPI",
+          "level": 75
+        }
+      ]
+    },
+    {
+      "category": "Database & Tools",
+      "items": [
+        {
+          "name": "MySQL",
+          "level": 85
+        },
+        {
+          "name": "PostgreSQL",
+          "level": 80
+        },
+        {
+          "name": "Prisma",
+          "level": 80
+        },
+        {
+          "name": "Git & GitHub",
+          "level": 85
+        },
+        {
+          "name": "VS Code",
+          "level": 95
+        },
+        {
+          "name": "Linux",
+          "level": 75
+        }
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "id": "traffic-monitoring",
+      "title": "An RFID-Integrated Smart Helmet System for Real-Time Traffic Monitoring and Rider Safety.",
+      "description": "Developed an AI-powered traffic monitoring system that detects helmet usage, recognizes vehicle number plates using OCR, and verifies helmet authenticity through RFID integration. The system automates traffic violation detection and improves road safety.",
+      "tech": [
+        "Python",
+        "YOLO",
+        "OpenCV",
+        "OCR",
+        "Flask",
+        "RFID"
+      ],
+      "githubUrl": "",
+      "liveUrl": "",
+      "images": [],
+      "timeline": "2025",
+      "features": [
+        "Helmet Detection",
+        "Vehicle Number Plate Recognition",
+        "OCR Integration",
+        "RFID-based Helmet Verification",
+        "Traffic Violation Detection"
+      ]
+    },
+    {
+      "id": "musical-database",
+      "title": "Musical Database Management System",
+      "description": "Developed a web-based musical database system that allows users to search songs and retrieve musical information such as BPM, scale, genre, and other metadata using a structured database.",
+      "tech": [
+        "Python",
+        "HTML",
+        "CSS",
+        "MySQL"
+      ],
+      "githubUrl": "",
+      "liveUrl": "",
+      "images": [],
+      "timeline": "2025",
+      "features": [
+        "Song Search",
+        "Music Metadata Retrieval",
+        "BPM Detection",
+        "Genre Classification",
+        "Database Management"
+      ]
+    },
+    {
+      "id": "ai-voice-assistant",
+      "title": "AI Voice Personal Assistant",
+      "description": "Designed and developed an AI-powered voice assistant capable of understanding voice commands, responding intelligently, and assisting users with everyday tasks using speech recognition and natural language processing.",
+      "tech": [
+        "Python",
+        "Speech Recognition",
+        "NLP",
+        "OpenAI API",
+        "Flask"
+      ],
+      "githubUrl": "",
+      "liveUrl": "\"C:\\Users\\User\\Desktop\\New folder\\ai assistent\"",
+      "images": [],
+      "timeline": "2026",
+      "features": [
+        "Voice Command Recognition",
+        "Speech-to-Text",
+        "AI-based Responses",
+        "Task Automation",
+        "Personal Assistance"
+      ]
+    },
+    {
+      "id": "manufacturing-defect-detection",
+      "title": "Automated Manufacturing Defect Detection System Using Vision-Based Deep Learning",
+      "description": "Developed a computer vision system using YOLOv11 and deep learning techniques to automatically detect manufacturing defects in real time, improving quality inspection and reducing manual intervention.",
+      "tech": [
+        "Python",
+        "YOLOv11",
+        "PyTorch",
+        "OpenCV",
+        "Flask"
+      ],
+      "githubUrl": "",
+      "liveUrl": "https://drive.google.com/drive/folders/1OuCqNGfD34zGFeeNcRMqEj12HD3Z67xT?usp=sharing",
+      "images": [],
+      "timeline": "2026",
+      "features": [
+        "Real-Time Defect Detection",
+        "Custom YOLOv11 Model",
+        "Deep Learning-Based Inspection",
+        "Quality Control Automation",
+        "Web Dashboard"
+      ]
+    },
+    {
+      "id": "legal-document-analysis",
+      "title": "Automated Legal Document Analysis and Case Outcome Prediction Using Transformer Models",
+      "description": "Developed an intelligent legal document analysis system that extracts information from legal documents using OCR and predicts potential case outcomes using transformer-based natural language processing models.",
+      "tech": [
+        "Python",
+        "Transformers",
+        "BERT",
+        "OCR",
+        "Flask"
+      ],
+      "githubUrl": "",
+      "liveUrl": "https://drive.google.com/drive/folders/1eA0TY9EmL8EfGxxieGSb7nHyOsQ3-Ooo?usp=sharing",
+      "images": [],
+      "timeline": "2026",
+      "features": [
+        "Legal Document OCR",
+        "Transformer-Based NLP",
+        "Case Outcome Prediction",
+        "Text Classification",
+        "Automated Document Analysis"
+      ]
+    }
+  ],
+  "experience": [
+    {
+      "role": "AI Engineer / ML Specialist (Intern)",
+      "company": "Zetacoding Innovative Solutions",
+      "period": "2026",
+      "description": "Worked on AI/ML solutions leveraging Python, TensorFlow, and computer vision."
+    }
+  ],
+  "education": [
+    {
+      "degree": "B.E. Artificial Intelligence & Machine Learning",
+      "institution": "BMS Institute of Technology and Management (BMSIT&M)",
+      "period": "2023 - 2026"
+    },
+    {
+      "degree": "Diploma in Mechanical Engineering",
+      "institution": "BGS POLYTECHNIC ",
+      "period": "2020 - 2023"
+    }
+  ],
+  "certificates": [
+    {
+      "title": "Introduction to Industry 4.0 and Industrial Internet of Things",
+      "issuer": "NPTEL",
+      "year": "2025",
+      "credentialUrl": ""
+    },
+    {
+      "title": "Leadership and Team Effectiveness",
+      "issuer": "NPTEL",
+      "year": "2025",
+      "credentialUrl": ""
+    },
+    {
+      "title": "Internet of Things",
+      "issuer": "NPTEL",
+      "year": "2025",
+      "credentialUrl": ""
+    },
+    {
+      "title": "Basics of Business Communication",
+      "issuer": "Infosys Springboard",
+      "year": "2025",
+      "credentialUrl": ""
+    },
+    {
+      "title": "Python Programming",
+      "issuer": "Infosys Springboard",
+      "year": "2025",
+      "credentialUrl": ""
+    },
+    {
+      "title": "Artificial Intelligence Fundamentals",
+      "issuer": "Infosys Springboard",
+      "year": "2025",
+      "credentialUrl": ""
+    },
+    {
+      "title": "Machine Learning Basics",
+      "issuer": "Coursera",
+      "year": "2025",
+      "credentialUrl": ""
+    },
+    {
+      "title": "Introduction to Deep Learning",
+      "issuer": "Coursera",
+      "year": "2025",
+      "credentialUrl": ""
+    },
+    {
+      "title": "SQL for Data Science",
+      "issuer": "Coursera",
+      "year": "2025",
+      "credentialUrl": ""
+    },
+    {
+      "title": "Git and GitHub Essentials",
+      "issuer": "LinkedIn Learning",
+      "year": "2025",
+      "credentialUrl": ""
+    }
+  ],
+  "achievements": [
+    {
+      "id": "ieee-paper",
+      "title": "IEEE Conference Paper Presentation",
+      "description": "Presented a research paper on Music Information Retrieval and Database Systems at an IEEE conference, demonstrating research and technical presentation skills.",
+      "date": "2025",
+      "image": "/uploads/1783876597868-8z8csa.png"
+    },
+    {
+      "id": "automatic-magnetic-braking",
+      "title": "First Prize – Automatic Magnetic Braking System Using ABS",
+      "description": "Received First Prize at the college Open Day Project Exhibition for developing an Automatic Magnetic Braking System integrated with the Anti-lock Braking System (ABS). The project focused on improving vehicle safety through innovative braking technology and practical engineering design.",
+      "date": "2023",
+      "image": "/uploads/1783878549495-xldbos.jpeg"
+    },
+    {
+      "id": "code-red-hackathon",
+      "title": "CODE RED 3.0 – National Level 24-Hour Hackathon",
+      "description": "Participated in Round 1 of the National Level 24-Hour Hackathon 'CODE RED 3.0' organized by the E-Cell, BMS Institute of Technology & Management. Collaborated on solving real-world challenges under time constraints, strengthening problem-solving, teamwork, and software development skills.",
+      "date": "2025",
+      "image": "/uploads/1783876608188-uimqoa.jpg"
+    },
+    {
+      "id": "manufacturing-ai",
+      "title": "AI-Based Manufacturing Defect Detection",
+      "description": "Designed and developed a computer vision system using YOLOv11 for automated manufacturing defect detection with real-time object detection.",
+      "date": "2026",
+      "image": "/uploads/1783876912497-83jtwl.png"
+    },
+    {
+      "id": "helmet-system",
+      "title": "Smart Helmet Detection System",
+      "description": "Developed an AI-powered traffic monitoring system with helmet detection, number plate recognition, OCR, and RFID-based verification.",
+      "date": "2025",
+      "image": "/uploads/1783876622822-nlokge.png"
+    },
+    {
+      "id": "portfolio",
+      "title": "Full Stack Portfolio Development",
+      "description": "Built a professional portfolio website using Next.js, TypeScript, Tailwind CSS, Prisma, PostgreSQL, and an admin dashboard.",
+      "date": "2026",
+      "image": "/uploads/1783877119360-gro3nq.png"
+    },
+    {
+      "id": "nptel",
+      "title": "NPTEL Certifications",
+      "description": "Successfully completed multiple NPTEL certification courses in Internet of Things, Industry 4.0, and Leadership & Team Effectiveness.",
+      "date": "2025",
+      "image": "/uploads/1783876632894-6wnpqf.jpg"
+    }
+  ]
+}
