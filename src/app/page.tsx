@@ -61,7 +61,7 @@ export default function Home() {
         </div>
 
         <footer className="text-center py-8 text-sm opacity-50">
-          Built with Next.js · Edit content in <code>/admin</code>
+          Designed & Developed by <strong>Vasudev S</strong>
         </footer>
       </div>
 
