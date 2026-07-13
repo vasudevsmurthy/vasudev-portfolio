@@ -18,7 +18,6 @@
   },
   "roles": [
     "AI & ML Engineer",
-    
     "Deep Learning Enthusiast",
     "Python Developer",
     "Competitive Programmer"
@@ -449,6 +448,13 @@
       "description": "Successfully completed multiple NPTEL certification courses in Internet of Things, Industry 4.0, and Leadership & Team Effectiveness.",
       "date": "2025",
       "image": "/uploads/1783876632894-6wnpqf.jpg"
+    },
+    {
+      "id": "3f17c85d-618c-4c1c-8bfa-df5ed556f0ad",
+      "title": "AI & Machine Learning Intern",
+      "description": "Zetacoding Innovative Solutions\n\nCompleted a 4-month internship in Artificial Intelligence & Machine Learning at Zetacoding Innovative Solutions. Gained hands-on experience in AI and machine learning, contributed to real-world projects, enhanced analytical and problem-solving skills, and collaborated effectively within a development team.",
+      "date": "January 2026 – May 2026",
+      "image": "/uploads/1783924543191-9une1o.jpg"
     }
   ]
 }
