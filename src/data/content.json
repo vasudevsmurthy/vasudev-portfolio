@@ -18,13 +18,13 @@
   },
   "roles": [
     "AI & ML Engineer",
-    "Computer Vision Developer",
+    
     "Deep Learning Enthusiast",
     "Python Developer",
     "Competitive Programmer"
   ],
   "now": {
-    "text": "Learning advanced deep learning architectures and preparing applications for a Master's in UK.",
+    "text": "Currently developing intelligent AI applications, including vision-based inspection systems, legal document analysis using transformer models, and interactive full-stack web applications using Next.js, Python, and modern AI frameworks.",
     "updatedAt": "July 2026"
   },
   "stats": [
