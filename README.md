@@ -22,6 +22,11 @@ A production-grade **starting point** for your portfolio: Next.js 14 + TypeScrip
 - Loading screen, custom cursor, magnetic buttons, scroll-triggered animations
 - **Achievements tab** with its own section, image gallery, and fullscreen lightbox — upload images straight from the admin dashboard
 - **AI chatbot widget** (free, via Groq) — visitors can ask questions about you; answers using your `content.json` data
+- **Scroll progress bar** — a thin gradient line at the very top of the page showing how far you've scrolled
+- **Back-to-top button** — appears after scrolling past the hero, smooth-scrolls back up
+- **Ambient background** — soft, slow-drifting gradient blobs behind the entire site for visual cohesion (not just the hero)
+- **Flip-card certificates** — hover any certificate to flip it and reveal the issuer, year, and credential link on the back
+- **Filterable skills** — category tabs above your skill cards now that you have more of them
 - **Interactive testimonials / guestbook** — visitors can submit their own testimonial with a star rating directly on the site; you approve or reject each one from the admin dashboard before it goes public
 - **Clap button** — a real, database-backed reaction counter (like Medium's claps) visitors can tap before the contact section
 - **Hidden Konami code easter egg** — try ↑ ↑ ↓ ↓ ← → ← → b a anywhere on the site (there's also a hint left in the browser console for anyone who checks)

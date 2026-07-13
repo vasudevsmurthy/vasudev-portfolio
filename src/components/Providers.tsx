@@ -6,6 +6,9 @@ import { usePathname } from "next/navigation";
 import { AnimatePresence, motion } from "framer-motion";
 import CommandPalette from "./CommandPalette";
 import EasterEgg from "./EasterEgg";
+import ScrollProgress from "./ScrollProgress";
+import BackToTop from "./BackToTop";
+import AmbientBackground from "./AmbientBackground";
 
 export default function Providers({ children }: { children: React.ReactNode }) {
   const pathname = usePathname();
@@ -23,8 +26,11 @@ export default function Providers({ children }: { children: React.ReactNode }) {
 
   return (
     <>
+      <AmbientBackground />
+      <ScrollProgress />
       <CommandPalette />
       <EasterEgg />
+      <BackToTop />
       <AnimatePresence mode="wait">
         <motion.div
           key={pathname}

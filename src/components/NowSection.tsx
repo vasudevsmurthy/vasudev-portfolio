@@ -13,7 +13,8 @@ export default function NowSection() {
       initial={{ opacity: 0, y: 20 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
-      className="glass rounded-2xl p-6 flex items-start gap-4"
+      whileHover={{ y: -4 }}
+      className="glass rounded-2xl p-6 flex items-start gap-4 transition-shadow hover:shadow-lg"
     >
       <span className="w-10 h-10 rounded-full bg-accent/15 text-accent flex items-center justify-center shrink-0">
         <Radio size={18} />

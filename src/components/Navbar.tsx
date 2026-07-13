@@ -20,9 +20,11 @@ const links = [
 export default function Navbar() {
   const pathname = usePathname();
   const { profile } = content;
+
   const [dark, setDark] = useState(true);
   const [activeSection, setActiveSection] = useState("about");
   const [mobileOpen, setMobileOpen] = useState(false);
+  const [photoOpen, setPhotoOpen] = useState(false);
 
   useEffect(() => {
     document.documentElement.classList.toggle("dark", dark);
@@ -44,8 +46,25 @@ export default function Navbar() {
     return () => observer.disconnect();
   }, [pathname]);
 
+  useEffect(() => {
+    if (!photoOpen) return;
+    function handleKeyDown(e: KeyboardEvent) {
+      if (e.key === "Escape") setPhotoOpen(false);
+    }
+    window.addEventListener("keydown", handleKeyDown);
+    return () => window.removeEventListener("keydown", handleKeyDown);
+  }, [photoOpen]);
+
   const isActive = (l: (typeof links)[number]) =>
-    l.id === "contact-page" ? pathname === "/contact" : pathname === "/" && activeSection === l.id;
+    l.id === "contact-page"
+      ? pathname === "/contact"
+      : pathname === "/" && activeSection === l.id;
+
+  function openPhoto(e: React.MouseEvent) {
+    e.preventDefault();
+    e.stopPropagation();
+    setPhotoOpen(true);
+  }
 
   return (
     <>
@@ -53,8 +72,17 @@ export default function Navbar() {
         <div className="max-w-6xl mx-auto px-6 h-28 flex items-center justify-between">
           {/* Logo */}
           <a href="/" className="flex items-center gap-3 shrink-0 group">
-            <div className="relative w-16 h-16 rounded-xl p-[2px] bg-gradient-to-br from-accent to-plum shadow-md shadow-accent/20 group-hover:shadow-lg group-hover:shadow-accent/40 transition-shadow duration-300">
-              <div className="w-full h-full rounded-[13px] overflow-hidden relative ring-1 ring-white/10">
+            <span
+              role="button"
+              tabIndex={0}
+              onClick={openPhoto}
+              onKeyDown={(e) => {
+                if (e.key === "Enter" || e.key === " ") openPhoto(e as unknown as React.MouseEvent);
+              }}
+              aria-label="View profile photo"
+              className="relative w-16 h-16 rounded-xl p-[2px] bg-gradient-to-br from-accent to-plum shadow-md shadow-accent/20 group-hover:shadow-lg group-hover:shadow-accent/40 transition-shadow duration-300 cursor-pointer inline-block"
+            >
+              <span className="block w-full h-full rounded-[13px] overflow-hidden relative ring-1 ring-white/10">
                 <Image
                   src={profile.profileImage || "/profile.jpg"}
                   alt={profile.name}
@@ -62,8 +90,8 @@ export default function Navbar() {
                   priority
                   className="object-cover group-hover:scale-105 transition-transform duration-300"
                 />
-              </div>
-            </div>
+              </span>
+            </span>
             <span className="font-display italic text-2xl">{profile.name}</span>
           </a>
 
@@ -145,22 +173,28 @@ export default function Navbar() {
             >
               <div className="flex justify-between items-center mb-6">
                 <div className="flex items-center gap-3">
-                  <div className="relative w-10 h-10 rounded-xl p-[2px] bg-gradient-to-br from-accent to-plum shrink-0">
+                  <button
+                    type="button"
+                    onClick={openPhoto}
+                    aria-label="View profile photo"
+                    className="relative w-10 h-10 rounded-xl p-[2px] bg-gradient-to-br from-accent to-plum shrink-0 cursor-pointer group"
+                  >
                     <div className="w-full h-full rounded-[8px] overflow-hidden relative ring-1 ring-white/10">
                       <Image
                         src={profile.profileImage || "/profile.jpg"}
                         alt={profile.name}
                         fill
-                        className="object-cover"
+                        className="object-cover group-hover:scale-105 transition-transform duration-300"
                       />
                     </div>
-                  </div>
+                  </button>
                   <span className="font-display italic text-lg">{profile.name}</span>
                 </div>
                 <button onClick={() => setMobileOpen(false)} aria-label="Close menu">
                   <X size={22} />
                 </button>
               </div>
+
               <nav className="flex flex-col gap-1 mb-6">
                 {links.map((l) => (
                   <a
@@ -175,6 +209,7 @@ export default function Navbar() {
                   </a>
                 ))}
               </nav>
+
               <div className="flex items-center gap-3">
                 <button
                   onClick={() => setDark(!dark)}
@@ -190,6 +225,44 @@ export default function Navbar() {
                   <Download size={14} /> Resume
                 </a>
               </div>
+            </motion.div>
+          </motion.div>
+        )}
+      </AnimatePresence>
+
+      {/* Full-screen profile photo modal */}
+      <AnimatePresence>
+        {photoOpen && (
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 0.25 }}
+            onClick={() => setPhotoOpen(false)}
+            className="fixed inset-0 z-[300] bg-black/80 backdrop-blur-sm flex items-center justify-center p-6"
+          >
+            <motion.div
+              initial={{ opacity: 0, scale: 0.85 }}
+              animate={{ opacity: 1, scale: 1 }}
+              exit={{ opacity: 0, scale: 0.85 }}
+              transition={{ duration: 0.3, ease: "easeOut" }}
+              onClick={(e) => e.stopPropagation()}
+              className="relative w-full max-w-sm sm:max-w-lg aspect-square rounded-2xl overflow-hidden shadow-2xl ring-1 ring-white/10"
+            >
+              <Image
+                src={profile.profileImage || "/profile.jpg"}
+                alt={profile.name}
+                fill
+                priority
+                className="object-cover"
+              />
+              <button
+                onClick={() => setPhotoOpen(false)}
+                aria-label="Close"
+                className="absolute top-3 right-3 w-9 h-9 rounded-full bg-black/50 text-white flex items-center justify-center hover:bg-black/70 transition"
+              >
+                <X size={18} />
+              </button>
             </motion.div>
           </motion.div>
         )}

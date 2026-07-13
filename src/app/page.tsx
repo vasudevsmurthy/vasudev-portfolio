@@ -60,9 +60,9 @@ export default function Home() {
           <Contact />
         </div>
 
-        <footer className="text-center py-8 text-sm opacity-50">
-          Designed & Developed by <strong>Vasudev S</strong>
-        </footer>
+       <footer className="text-center py-8 text-sm opacity-50">
+  Designed & Developed by <strong>Vasudev S</strong>
+      </footer>
       </div>
 
       <ChatWidget />

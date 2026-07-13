@@ -35,7 +35,8 @@ export default function GitHubStats() {
       initial={{ opacity: 0, y: 20 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
-      className="glass rounded-2xl p-6"
+      whileHover={{ y: -4 }}
+      className="glass rounded-2xl p-6 transition-shadow hover:shadow-lg"
     >
       <div className="flex items-center gap-2 mb-5">
         <Github size={18} className="text-accent" />
